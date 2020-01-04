@@ -17,7 +17,7 @@
         android:text="Panjang Alas"/>
 
     <EditText
-        android:id="@+id/edt_LongPedestal"
+        android:id="@+id/edt_Pedestal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
