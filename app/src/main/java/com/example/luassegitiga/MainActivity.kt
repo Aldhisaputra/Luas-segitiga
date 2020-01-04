@@ -8,46 +8,34 @@ import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
-    var edt_Pedestal: EditText? = null
-    var edt_Height: EditText? = null
-    var btn_Hitung: Button? = null
-    var edt_Result: EditText? = null
+    var edt_pedestal: EditText? = null
+    var edt_height: EditText? = null
+    var btn_hitung: Button? = null
+    var edt_result: EditText? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        edt_Pedestal = findViewById(R.id.edt_Pedestal)
-        edt_Height = findViewById(R.id.edt_Height)
-        btn_Hitung = findViewById(R.id.btn_Hitung)
-        edt_Result = findViewById(R.id.edt_Result)
+        edt_pedestal = findViewById(R.id.edt_pedestal)
+        edt_height = findViewById(R.id.edt_height)
+        btn_hitung = findViewById(R.id.btn_hitung)
+        edt_result = findViewById(R.id.edt_result)
 
-        btn_Hitung?.setOnClickListener {
-            var Pedestal = edt_Pedestal?.text.toString()
-            var Height = edt_Height?.text.toString()
+        btn_hitung?.setOnClickListener {
+            var pedestal = edt_pedestal?.text.toString()
+            var height = edt_height?.text.toString()
 
-
-
-        if (Pedestal == "")   {
+        if (pedestal == "")   {
             Toast.makeText(this@MainActivity, "Panjang Alas  harus di isi", Toast.LENGTH_SHORT).show()
-
-
-        }else if (Height == "")  {
+        }else if (height == "")  {
             Toast.makeText(this@MainActivity, "Tinggi harus di isi", Toast.LENGTH_SHORT).show()
         }else{
-            var large = 0.5 * Pedestal.toInt()  * Height.toInt()
-            edt_Result?.setText("$large")
+            var large = 0.5 * pedestal.toInt() * height.toInt()
+            edt_result?.setText("$large")
         }
 
-
-
-
-
-
-
-
         }
-
 
     }
 }

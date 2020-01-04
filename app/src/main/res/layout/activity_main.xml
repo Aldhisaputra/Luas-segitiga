@@ -17,7 +17,7 @@
         android:text="Panjang Alas"/>
 
     <EditText
-        android:id="@+id/edt_Pedestal"
+        android:id="@+id/edt_pedestal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
@@ -31,20 +31,20 @@
         android:text="Tinggi"/>
 
     <EditText
-        android:id="@+id/edt_Height"
+        android:id="@+id/edt_height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:lines="1"/>
 
     <Button
-        android:id="@+id/btn_Hitung"
+        android:id="@+id/btn_hitung"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hitung"/>
 
     <EditText
-        android:id="@+id/edt_Result"
+        android:id="@+id/edt_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
